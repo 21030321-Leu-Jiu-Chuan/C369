@@ -1,0 +1,199 @@
+*{
+    background-color:cornsilk;
+}
+section{
+    background-color:blanchedalmond;
+    border-radius: 25px;
+    margin-right: 1000px;
+    height:500px;
+    width: 1450px;
+
+}
+#method{
+    text-align: left;
+    vertical-align: 100px;
+    box-sizing: border-box ;
+    border: 3px solid;
+    width: 150px;
+    margin-top: 1px;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 40px;
+    border-color: brown;
+    color:peru;
+ 
+}
+#amount{
+    box-sizing: border-box ;
+    border: 3px solid;
+    width: 260px;
+    margin-top: 30px;
+    margin-left: 20px;
+    padding: 10px;
+    border-color: brown;
+    color:peru;
+}
+img{
+       height: 120px; 
+       margin-left: 280px;
+       margin-top: -10%;
+       background-color:blanchedalmond;
+       background-image: none;
+       
+}
+#fee{
+    box-sizing: border-box ;
+    border: 3px solid;
+    width: 260px;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 10px;
+    border-color: brown;
+    color:peru;
+}
+
+#received{
+    box-sizing: border-box ;
+    border: 3px solid;
+    width: 260px;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 10px;
+    border-color: brown;
+    color:peru;
+}
+#rate{
+    box-sizing: border-box ;
+    border: 3px solid;
+    width: 260px;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 10px;
+    border-color: brown;
+    color:peru;
+}
+#rate_image{
+        height: 120px; 
+       margin-left: 280px;
+       margin-top: -10%;
+
+}
+
+#send{
+    font-size: 30px;
+    width: 250px;
+    margin-top: 10px;
+    color:peru;
+    border-color: brown;
+}
+#end{
+    font-size: 30px;
+    width: 250px;
+    color:peru;
+    border-color: brown;
+}
+#inputAmount{
+    position:absolute;
+    top: 230px;
+    margin-left:40px;
+    height:40px;
+    font-size: 40px;
+    width:300px;
+    border-color: brown;
+    border-style: solid;
+    color:peru;
+}
+#inputFee{
+    position:absolute;
+    top: 330px;
+    font-size: 30px;
+    margin-left:40px;
+    height:40px;
+    width:300px;
+    border-color: brown;
+    border-style:  solid;
+    color:peru;
+}
+#inputReceive{
+    position:absolute;
+    top: 430px;
+    font-size: 30px;
+    margin-left:40px;
+    height:40px;
+    width:300px;
+    border-color: brown;
+    border-style:  solid;
+    color:peru;
+}
+#inputRate{
+    position:absolute;
+    top: 530px;
+    font-size: 30px;
+    margin-left:40px;
+    height:40px;
+    width:300px;
+    border-color: brown;
+    border-style:  solid;
+    color:peru;
+}
+button{
+    margin-left: 20px;
+    margin-bottom: 70px;
+    border-color: brown;
+    border-style:  solid;
+    color:peru;
+}
+a{
+    background-color: burlywood;
+}
+article{
+    background-color: burlywood;
+    margin-top: 20px;
+    border-radius: 25px;
+    height:60px
+   
+}
+
+h3{
+    margin-top: 5 0px;
+}
+li{
+    float: left;
+    font-size: 30px;
+    text-align: right;
+    border: 3px solid;
+    border-color: brown;
+    box-sizing: border-box  ;
+    background-color: burlywood;
+}
+ul{
+    list-style-type: none;
+    padding: 10px;
+    width: 60%;
+    height: 20%;
+    margin-left: 25%;
+    margin-bottom: 5%;
+
+}
+h1{
+float: right;
+margin-right: 80px;
+background-color:goldenrod;
+color:saddlebrown;
+width:30%
+
+}
+h3{
+    background-color:navajowhite;
+    border-radius: 25px;
+    color:peru;
+}
+/* I declare that this code was written by me. 
+ I will not copy or allow others to copy my code. 
+ I understand that copying code is considered as plagiarism.
+ 
+ Student Name: :Leu Jiu Chuan
+ Student ID:21030321
+ Class:C369-2D-E62K
+ Date/Time Last modified:9/8/2022,12:47PM
+*/

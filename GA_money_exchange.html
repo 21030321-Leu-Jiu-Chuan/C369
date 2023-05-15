@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="money_exchange.css">
+
+   <script type="text/javascript">
+    
+      function checkOut(){
+         if(document.getElementById("inputAmount").value==""){
+            alert("Please input a value!!!")
+         }
+         else if(document.getElementById("inputAmount").value<=3){
+            alert("Please enter a value more than MYR 3.00")
+         }
+         else if(document.getElementById("inputReceive").value==""){
+            alert("Please press the calculate button in order to confrim the amount of money after exchanged. Thank you")
+         }
+         else{
+         alert("Transaction Successfully"+"\nTransfer Amount : SGD"+document.getElementById("inputReceive").value+"\nThank You for the choose of our company, wish you have a good day:)")
+         document.getElementById('inputAmount').value = '';
+         document.getElementById('inputReceive').value = '';
+         }
+         
+      }
+   
+      function endAmount(){
+       
+            var calcAmountSend=parseInt( document.getElementById("inputAmount").value);
+            var feeDeduct=3;
+            var calcRate=3.17;
+            var calcAmountReceived=((calcAmountSend-feeDeduct)/calcRate).toFixed(2);
+            if(calcAmountReceived<=0){
+            alert("Please input a positive value!!! Or enter value that is more than "+document.getElementById("inputFee").value)
+            document.getElementById('inputAmount').value = '';
+            }
+            else if(document.getElementById("inputAmount").value==""){
+                alert("Please input a value in order to calculate")
+            }
+            else{ 
+            document.getElementById("inputReceive").value=calcAmountReceived;
+        }
+        function toHome(){
+         alert("Changing to Home page please wait patinetly."+"\nIf the page is not changing please kindly refresh"+"\nThank You:)")
+        }
+        
+   }
+     
+function generate_id(){
+   
+}
+
+
+   </script>
+</head>
+<body>
+   <nav>
+      <ul>
+         <li>Money Exchange</li>
+         <li>Token Exchange</li>
+         <li>View History</li>
+         <li><a href="GA.html" onclick="toHome()">Home</li></a>
+      </ul>
+</nav>
+
+   <section>
+      
+   <h2 id="method">Payment Method</h2>
+   <h1>!!!IMPORTANT!!!</h1>  
+   <h2 id="amount">Send(MYR):</h2>
+      <img src="newArrow.png">
+      <input type="number" id="inputAmount" min=0> 
+     
+      <h1>Please be mindful that once the transaction is made, it is not refundable!! The transaction time will take 2-3 working days. Thank you for your understanding !!!</h1>
+      
+   <h2 id="fee">Fee:</h2>
+      <img id="fee_image"src="newArrow.png">
+      <input type="text" id="inputFee" value="MYR3.00" readonly>
+   <h2 id="received">Received(SGD):</h2>
+      <img src="newArrow.png">
+      <input type="number" id="inputReceive" readonly>
+   <h2 id="rate">Today Exchange Rate:</h2>
+      <img id="rate_image" src="newArrow.png">
+      <input type="text" id="inputRate" value="MYR 3.17-->SGD 1" readonly>
+      
+</section>
+
+
+<article>
+   <button id="end" onclick="endAmount()">Calculate</button>
+   <button id="send" onclick="checkOut()">Send Transaction</button>
+
+</article>
+
+
+<!--<p id="money_exchange">Money Exchange</p>
+<p id="token_exchange">Token Exchange</p>
+<p id="view_history">View History</p>
+<p id="help">Help</p>
+<ul>
+    <li>Money Exchange</li>
+    <li>Token Exchange</li>
+    <li>View History</li>
+    <li>Help</li>
+</ul>-->
+
+
+
+
+
+</body>
+<footer>
+   <h3>Any enquiries?Please call out hotline 9901 8354 or email us @ money_exchange@gmail.com</h3>
+</footer>
+</html>
+
+<!-- I declare that this code was written by me. 
+ I will not copy or allow others to copy my code. 
+ I understand that copying code is considered as plagiarism.
+ 
+ Student Name: :Leu Jiu Chuan
+ Student ID:21030321
+ Class:C369-2D-E62K
+ Date/Time Last modified:9/8/2022,12:47PM
+ -->
